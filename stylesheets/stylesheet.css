@@ -1,0 +1,19 @@
+
+nav {
+    position: fixed; /*lock nav bar*/
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a {
+    margin: 10px;
+    padding: 15px;
+    color: white;
+
+}
+
+body{
+    height 120vh;
+    background: #355e3b;
+}
