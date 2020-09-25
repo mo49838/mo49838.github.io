@@ -1,19 +1,71 @@
 
-nav {
-    position: fixed; /*lock nav bar*/
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
+body{
+    background: white;
+}
+
+.gridPattern{
+    display: grid;
+    grid-template-rows: 10vh 80vh 10vh 80vh;
+    grid-template-columns: 10% 1fr 10%;
+   
+    
+}
+
+#navGrid {
+    width: 80%;
+    height: 85%;
+    /*display: flex;
+    justify-content: flex-end;*/
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 3;
+    text-align: right;
+    background: rgb(216,215,226);
+    background: radial-gradient(circle, rgba(216,215,226,1) 0%, rgba(70,70,143,1) 57%, rgba(123,123,238,1) 100%);
+    margin: auto;
+  
 }
 
 nav a {
-    margin: 10px;
-    padding: 15px;
-    color: white;
+  
+    padding: 5px;
+    color: black;
+    background: white;
+    border-radius: 10px;
+    text
+    text-decoration: none;
+    margin: 20px;
+    
+}
+
+nav a:hover{
+    background-color: rgb(245, 245, 150);
+}
+
+#logoGrid{
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+    height: 85%;
+    background-image: url("../images/logo.png");
+    background-size:10%;
+    border-radius: 10px;
+    background-repeat:no-repeat;
+    margin: 2vh 3vh 2vh 3vh;
 
 }
 
-body{
-    height 120vh;
-    background: #355e3b;
+#adGrid{
+    grid-row: 2;
+    grid-column: 2;
+    background-image: url("../images/summit.png");
+    background-size:cover;
+    
+
+}
+
+#third{
+    grid-row: 3;
+    grid-column: 2;
+    text-align: center;
+    margin: 5px;
+    
 }
