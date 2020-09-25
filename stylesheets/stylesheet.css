@@ -1,11 +1,15 @@
 
+html { 
+    scroll-behavior: smooth; 
+} 
+
 body{
     background: white;
 }
 
 .gridPattern{
     display: grid;
-    grid-template-rows: 10vh 80vh 10vh 80vh;
+    grid-template-rows: 10vh 80vh 10vh 83vh 10vh 83vh 10vh 90vh;
     grid-template-columns: 10% 1fr 10%;
    
     
@@ -25,19 +29,26 @@ body{
   
 }
 
-nav a {
+.button {
   
     padding: 5px;
     color: black;
     background: white;
     border-radius: 10px;
-    text
     text-decoration: none;
     margin: 20px;
+    font-size: x-large;
+    border: black 1px solid;
+    line-height: 8vh;
     
 }
 
-nav a:hover{
+.imageResize{
+    max-width: 40%;
+    width: 40%;
+    padding: 10px;
+}
+.button:hover{
     background-color: rgb(245, 245, 150);
 }
 
@@ -58,14 +69,81 @@ nav a:hover{
     grid-column: 2;
     background-image: url("../images/summit.png");
     background-size:cover;
-    
-
 }
 
-#third{
+.gradient{
+    background: rgb(216,215,226);
+    background: radial-gradient(circle, rgba(216,215,226,1) 0%, rgba(70,70,143,1) 57%, rgba(123,123,238,1) 100%);
+}
+
+.links{
+    text-align: center;
+    align-content: center;
+    height: 60%;
+    width: 100%;
+    margin: auto; 
+    vertical-align: auto;
+}
+#linkToServiceGrid{
     grid-row: 3;
     grid-column: 2;
-    text-align: center;
-    margin: 5px;
-    
 }
+
+#serviceGrid{
+    grid-row: 4;
+    grid-column: 2;
+    border-radius: 30px;
+    margin: auto;
+    text-align: center;
+}
+
+#linkToPortolioGrid{
+    grid-row: 5;
+    grid-column: 2;
+}
+
+#portfolioGrid{
+    grid-row: 6;
+    grid-column: 2;
+    border-radius: 30px;
+    margin: auto;
+    text-align: center;
+}
+#linkToContactGrid{
+    grid-row: 7;
+    grid-column: 2;  
+}
+#contactGrid{
+    grid-row: 8;
+    grid-column: 2;  
+    margin: auto;
+    text-align: center;
+}
+
+label{
+    color: white;
+    font-size: large;
+    text-align: left;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }

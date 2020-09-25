@@ -8,20 +8,53 @@
 </head>
 <body>
     <div class="gridPattern">
-        <!-- top of page-->
-        <nav id="navGrid">
-            <a href="">About</a><a href="">Portfolio</a><a href="">Contact</a> 
+        <nav class="gradient" id="navGrid">
+            <a href="#linkToServiceGrid" class="button">Services</a>
+            <a href="#linkToPortolioGrid" class="button">Portfolio</a>
+            <a href="#linkToContactGrid" class="button">Contact</a> 
         </nav>
         <div id="logoGrid">
-            
+            <!-- see css for background image-->
         </div>
-        <!-- ad-->
         <div id="adGrid">
-            
+            <!-- see css for background image-->
         </div>
-        <div id="third">
-            hi
-        </div>        
+
+        <!-- begin service sectino-->
+        <div class="gradient links" id="linkToServiceGrid">
+            <a href="#linkToServiceGrid" class="button">Services</a>
+        </div>   
+        <div class="gradient" id="serviceGrid">
+            <img src="images/web-design.png" alt="web design" class="imageResize"/>
+            <img src="images/data_analytics.png" alt="data and analytics" class="imageResize"/>            
+        </div>
+
+        <!-- begin portfolio sectino-->
+        <div class="gradient links" id="linkToPortolioGrid">
+            <a href="#linkToPortolioGrid" class="button">Portfolio</a>
+        </div> 
+        <div class="gradient" id="portfolioGrid">
+            <img src="images/portfolio_ex1.png" alt="web design" class="imageResize"/>
+        </div>
+        <!-- begin contact sectino-->
+        <div class="gradient links" id="linkToContactGrid">
+            <a href="#linkToContactGrid" class="button">Contact</a>
+        </div> 
+        <div class="gradient" id="contactGrid">
+            <form onsubmit="submitInfo()">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name..">
+            
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Your email..">
+        
+            
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            
+                <input type="submit" value="Submit">
+              </form>
+        </div>      
     </div>
 
     <script src="javascript/main.js"></script>
